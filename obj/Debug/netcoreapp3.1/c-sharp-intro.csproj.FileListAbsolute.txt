@@ -1,0 +1,13 @@
+D:\techcareers\projects\c-sharp-intro\bin\Debug\netcoreapp3.1\c-sharp-intro.exe
+D:\techcareers\projects\c-sharp-intro\bin\Debug\netcoreapp3.1\c-sharp-intro.deps.json
+D:\techcareers\projects\c-sharp-intro\bin\Debug\netcoreapp3.1\c-sharp-intro.runtimeconfig.json
+D:\techcareers\projects\c-sharp-intro\bin\Debug\netcoreapp3.1\c-sharp-intro.runtimeconfig.dev.json
+D:\techcareers\projects\c-sharp-intro\bin\Debug\netcoreapp3.1\c-sharp-intro.dll
+D:\techcareers\projects\c-sharp-intro\bin\Debug\netcoreapp3.1\c-sharp-intro.pdb
+D:\techcareers\projects\c-sharp-intro\obj\Debug\netcoreapp3.1\c-sharp-intro.csprojAssemblyReference.cache
+D:\techcareers\projects\c-sharp-intro\obj\Debug\netcoreapp3.1\c-sharp-intro.AssemblyInfoInputs.cache
+D:\techcareers\projects\c-sharp-intro\obj\Debug\netcoreapp3.1\c-sharp-intro.AssemblyInfo.cs
+D:\techcareers\projects\c-sharp-intro\obj\Debug\netcoreapp3.1\c-sharp-intro.csproj.CoreCompileInputs.cache
+D:\techcareers\projects\c-sharp-intro\obj\Debug\netcoreapp3.1\c-sharp-intro.dll
+D:\techcareers\projects\c-sharp-intro\obj\Debug\netcoreapp3.1\c-sharp-intro.pdb
+D:\techcareers\projects\c-sharp-intro\obj\Debug\netcoreapp3.1\c-sharp-intro.genruntimeconfig.cache
