@@ -19,6 +19,13 @@ namespace c_sharp_intro
             followed by a forward
             */
             Console.WriteLine("Hello," + myName);
+
+            Console.WriteLine("Please enter your name");
+            //Assign a variable 'userName' to value entered by the user
+            string userName = Console.ReadLine();
+            Console.WriteLine("You have entered " + userName);
+            Console.WriteLine("Hey {0} you are looking great today! ", userName);
+
         }
     }
 }
