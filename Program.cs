@@ -6,7 +6,8 @@ namespace c_sharp_intro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, TECHCareers!");
+            string myName = "Senai Tesfazgi";
+            Console.WriteLine("Hello," + myName);
         }
     }
 }
