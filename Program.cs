@@ -8,29 +8,29 @@ namespace c_sharp_intro
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number");
-            int userInt = Int32.Parse(Console.ReadLine());
-            if (userInt > 10)
+            int  myNum = 3;
+            while (myNum > 0)// Iterates/loops while the condition is TRUE.
             {
-                Console.WriteLine("Greater than 5");
+                Console.WriteLine("Current number is: {0}", myNum);
+                myNum--;
             }
-            else if (userInt < 0)
-            {
-                Console.WriteLine("Negative number");
-            }
-            else if (userInt > 5)
-            {
-                Console.WriteLine("Greater than 10");
-            }
-            else if (userInt > 0)
-            {
-                Console.WriteLine("Positive number");
-            }
-            else
-            {
-                Console.WriteLine("Number is betweeen 1 and 4");
-            }
+            /*for loop has 3 semi-colon-separated componenets:
+               1)Assignement 
+               2)[Termination condition]
+               3)Iteration or looping
+            */
 
+            for (int i = 0; i < 5; i+=2)
+            {
+                Console.WriteLine("Current (for) number is: {0}", i);
+            }
+            //If we need to iterate through a list, use foreach!
+            //@link https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/foreach-in
+            string[] myList = {"cat", "turtle", "lizard", "frog", "dog"};
+            foreach (string listItem in myList)
+            {
+                Console.WriteLine("Current item is {0}", listItem);
+            }
         }
     }
 }
