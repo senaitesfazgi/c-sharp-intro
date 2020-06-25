@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\techcareers\\projects\\c-sharp-intro\\c-sharp-intro.csproj": {}
+    "D:\\TECHCareers\\Projects\\c-sharp-intro\\c-sharp-intro.csproj": {}
   },
   "projects": {
-    "D:\\techcareers\\projects\\c-sharp-intro\\c-sharp-intro.csproj": {
+    "D:\\TECHCareers\\Projects\\c-sharp-intro\\c-sharp-intro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\techcareers\\projects\\c-sharp-intro\\c-sharp-intro.csproj",
+        "projectUniqueName": "D:\\TECHCareers\\Projects\\c-sharp-intro\\c-sharp-intro.csproj",
         "projectName": "c-sharp-intro",
-        "projectPath": "D:\\techcareers\\projects\\c-sharp-intro\\c-sharp-intro.csproj",
+        "projectPath": "D:\\TECHCareers\\Projects\\c-sharp-intro\\c-sharp-intro.csproj",
         "packagesPath": "C:\\Users\\senai\\.nuget\\packages\\",
-        "outputPath": "D:\\techcareers\\projects\\c-sharp-intro\\obj\\",
+        "outputPath": "D:\\TECHCareers\\Projects\\c-sharp-intro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\senai\\AppData\\Roaming\\NuGet\\NuGet.Config",
