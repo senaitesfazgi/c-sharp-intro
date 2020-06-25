@@ -35,6 +35,29 @@ namespace c_sharp_intro
             Console.WriteLine("3" + 3); //33
             Console.WriteLine(3 + 6 + "3");
 
+            //Output for variable.
+            Console.WriteLine(myInt); //42
+
+
+            myInt =myInt + 2; //44
+            Console.WriteLine(myInt); //44
+            Console.WriteLine(myInt); //44
+
+            //myInt = myInt + "2"; //We can't turn myInt into a string!
+                                    //we told the c# that myInt would always be an int!
+            //Console.WriteLine(myInt);
+
+            myInt++; // The same as typting myInt = myInt + 1;
+            myInt--; //The same as typing; myInt = myInt - 1;
+            Console.WriteLine(myInt); //44
+
+            myInt += 3; //The same as typing: myInt = myInt + 3;
+            Console.WriteLine(myInt);//47
+            myInt -=5; //The same as typing: myInt = myInt -3;
+            Console.WriteLine(myInt); //42
+
+
+
         }
     }
 }
