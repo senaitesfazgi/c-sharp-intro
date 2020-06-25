@@ -8,6 +8,7 @@ namespace c_sharp_intro
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter a number");
             int userInt = Int32.Parse(Console.ReadLine());
             if (userInt > 10)
             {
@@ -16,17 +17,14 @@ namespace c_sharp_intro
             else if (userInt < 0)
             {
                 Console.WriteLine("Negative number");
-      
             }
             else if (userInt > 5)
             {
                 Console.WriteLine("Greater than 10");
-      
             }
             else if (userInt > 0)
             {
                 Console.WriteLine("Positive number");
-      
             }
             else
             {
