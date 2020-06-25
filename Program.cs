@@ -8,15 +8,19 @@ namespace c_sharp_intro
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a string:");
-            string userInput = Console.ReadLine();
-            if(userInput.Length > 0)
+            Console.WriteLine("Please us if you want to add or subtract: add/subtract");
+            string userOperator = Console.ReadLine();
+            //Check if the user typed add
+            if (userOperator == "add")
             {
-                Console.WriteLine("the user entered a value");
-            }
-            else
-            {
-                Console.WriteLine("The user did enter a value");
+                Console.WriteLine("Please the first number:");
+                int firstNum = Int32.Parse(Console.ReadLine()); //Convert string to integer
+                //@Link https://stackoverflow.com/questions/1019793/how-can-i-convert-string-to-int
+                Console.WriteLine("Please Enter the second number to add:");
+                int secondNum = Int32.Parse(Console.ReadLine());
+                //Calculate the result.
+                int result = firstNum + secondNum;
+                Console.WriteLine("{0} + {1} = {2}", firstNum, secondNum, result);
             }
         }
     }
