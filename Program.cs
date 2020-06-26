@@ -18,6 +18,14 @@ namespace c_sharp_intro
                 int firstNum;
                 int secondNum;
                 int result;
+                try
+                {
+                    secondNum = Int32.Parse(Console.ReadLine()); 
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                } 
                 //Console.WriteLine("Looping.......");
 
                 //switch statements are similar to if/else 
@@ -53,7 +61,7 @@ namespace c_sharp_intro
                         secondNum = Int32.Parse(Console.ReadLine());
                         result = firstNum / secondNum;
                         Console.WriteLine("{0} / {1} = {2}", firstNum, secondNum, result);
-                        break;
+                        break;       
                     default:
                         Console.WriteLine("Unrecognized operator entered");
                         break;
