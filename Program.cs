@@ -6,29 +6,48 @@ namespace c_sharp_intro
     {
         static void Main(string[] args)
         {  
-            //2 dimensional array!
-            //string[,] list of lists
-            //string[] one list
-            //string one string
-            string[,] topics = {{"cat","dog","frog","hedgehog"},
-                                {"zebra", "giraffe", "lion", "ellephant"},
-                                {"dolphin", "octopus", "sharp","whale"},
-                                {"ant","bee","mosquito","fly"}};
-            //we can use a foreach to iterate through the list of lists,
-            //at a time
-            //Loop though the rows ....
-            for(int row = 0; row < topics.GetLength(0); row++)
+            Console.WriteLine("Please type: (add/subtract/exit)");
+            string command;//declare a variable
+            //accept commands
+            while((command = Console.ReadLine()) != "exit") 
             {
-                //Output current row....
-                Console.WriteLine("Starting row #{0}", row);
-                //Loop through current columns
-                for(int column = 0; column < topics.GetLength(1); column++)
+                Console.WriteLine("Please type: (add/subtract/exit)");
+                if (command == "add")
                 {
-                    //Output the current animal!
-                    Console.WriteLine("This animal is {0}",topics[row, column]);
+                    Console.WriteLine("Enter the first number to add");
+                    int firstNum = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter the second number to add");
+                    int secondNum = int.Parse(Console.ReadLine());
+                    int result = Addition(firstNum,secondNum);
+                    Console.WriteLine("{0} + {1} = {2}",firstNum,secondNum, result);
                 }
-            }
-                                 
+
+                else if(command == "subtract")
+                {
+                    Console.WriteLine("Enter the first number to subtact");
+                    int firstNum = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter the second number to subtract");
+                    int secondNum = int.Parse(Console.ReadLine());
+                    int result = Subtraction(firstNum,secondNum);
+                    Console.WriteLine("{0} + {1} = {2}",firstNum,secondNum, result);
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input: Enter add/subtract to continue");
+                }
+            }  
+            //this method takes two arguments and returns an integer
+        static int Addition(int num1, int num2)
+        //static used for independent methods
+        {
+            return num1 + num2;
+        }  
+        //this method takes two arguments and returns an integer
+        static int Subtraction(int num1, int num2)
+        //static used for independent methods
+        {
+            return num1 - num2;
+        }             
         }
     }
 }
