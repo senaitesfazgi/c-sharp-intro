@@ -8,65 +8,21 @@ namespace c_sharp_intro
 
         static void Main(string[] args)
         {  
-            //Guide the user
-            Console.WriteLine("Please enter add/subtract/multiply/divide"); 
-
-            //collect user input
-            string userInput;
-            while ((userInput = Console.ReadLine())!= "exit")//Loops.....
+            //2 dimensional array!
+            //string[,] list of lists
+            //string[] one list
+            //string one string
+            string[,] topics = {{"cat","dog","frog","hedgehog"},
+                                {"zebra", "giraffe", "lion", "ellephant"},
+                                {"dolphin", "octopus", "sharp","whale"}};
+            //we can use a foreach to iterate through the list of lists,
+            //at a time
+            foreach( string topic in topics)
             {
-                int firstNum;
-                int secondNum;
-                int result;
-                try
-                {
-                    secondNum = Int32.Parse(Console.ReadLine()); 
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                } 
-                //Console.WriteLine("Looping.......");
-
-                //switch statements are similar to if/else 
-                switch(userInput)   //Here we enter the value we want to enter.
-                {//cases are us testing the above against specific values
-                    case "add":
-                        Console.WriteLine("Enter first number for addition:");
-                        firstNum = Int32.Parse(Console.ReadLine());
-                        Console.WriteLine("Enter first number for addition:");
-                        secondNum = Int32.Parse(Console.ReadLine());
-                        result = firstNum + secondNum;
-                        Console.WriteLine("{0} + {1} = {2}", firstNum, secondNum, result);
-                        break;
-                    case "subtract":
-                        Console.WriteLine("Enter first number for subtraction:");
-                        firstNum = Int32.Parse(Console.ReadLine());
-                        Console.WriteLine("Enter first number for subtraction:");
-                        secondNum = Int32.Parse(Console.ReadLine());
-                        result = firstNum - secondNum;
-                        Console.WriteLine("{0} - {1} = {2}", firstNum, secondNum, result);
-                        break;
-                    case "multiply":
-                        firstNum = Int32.Parse(Console.ReadLine());
-                        Console.WriteLine("Enter first number for multiplication:");
-                        secondNum = Int32.Parse(Console.ReadLine());
-                        result = firstNum * secondNum;
-                        Console.WriteLine("{0} * {1} = {2}", firstNum, secondNum, result);
-                        break;
-                    case "divide":
-                        Console.WriteLine("enter the first number to divide");
-                        firstNum = Int32.Parse(Console.ReadLine());
-                        Console.WriteLine("Enter the second number to divide");
-                        secondNum = Int32.Parse(Console.ReadLine());
-                        result = firstNum / secondNum;
-                        Console.WriteLine("{0} / {1} = {2}", firstNum, secondNum, result);
-                        break;       
-                    default:
-                        Console.WriteLine("Unrecognized operator entered");
-                        break;
-                }//end switch statement
+                //Loop through this specific 
+                    Console.WriteLine("This animal is {0}", topic);
             }
+                                 
         }
     }
 }
